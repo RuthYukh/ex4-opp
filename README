@@ -1,0 +1,19 @@
+ruthyukh
+208106971
+
+//1
+At the first part of the exercise I used Hash set for the characters used as ascii chars at the Shell class.
+The reason i chose a set is because there is neither a need nor a meaning for duplicated chars at the set.
+I also used an array list int Shell class for the range of chars that the user wishes to add so i can comfortably
+add it into the set of chars to convert with.
+Next, at the BrightnessImgCharBMatcher class i used a hash map (cache) int order to optimize the program by
+adding brightnesses that were already calculated to the map so that if called again there is no need to
+recalculate.
+
+algo
+1. The described problem is the leetcode 287 algorithm.
+the run time complexity is O(n).
+
+2. I created an array with the morse letter, than added each morse letter as value into a hash map with the
+alphabetic letters as keys. Next, i added each morse combination to a set and returned the size of it so we know
+how mant unique combinations there are. Run time complexity is O(s), s being the length of words length.
